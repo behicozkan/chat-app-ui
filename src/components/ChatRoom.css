@@ -1,0 +1,63 @@
+/* ChatRoom.css */
+.chat-room {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures the chat room fits in the viewport */
+  background-color: #e5ddd5; /* WhatsApp-like chat background */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 60%;
+  padding: 8px 10px;
+  border-radius: 7.5px;
+  word-break: break-word;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.sender {
+  background-color: #dcf8c6; /* Light green background for sender messages */
+  margin-left: auto;
+  border-top-right-radius: 2px; /* Slight adjustment for WhatsApp-like bubble */
+}
+
+.receiver {
+  background-color: white; /* White background for receiver messages */
+  margin-right: auto;
+  border-top-left-radius: 2px; /* Slight adjustment for WhatsApp-like bubble */
+}
+
+.message-input {
+  display: flex;
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd; /* Separator line */
+}
+
+.message-input input {
+  flex-grow: 1;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  outline: none; /* Removes the default focus outline */
+}
+
+.message-input button {
+  background-color: #075e54; /* WhatsApp primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
